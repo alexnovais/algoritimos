@@ -6,7 +6,7 @@ public class ProgramaPrincipal {
 		
 		Calculadora calc1 = new Calculadora();
 		
-		Double valorSomaRetornado = calc1.calcularSoma(10.0, 1.0);
+		int valorSomaRetornado = calc1.calcularSoma(10, 1);
 		System.out.println(valorSomaRetornado);
 		
 		Double valorSubtracaoRetornado = calc1.calcularSubtracao(10.0, 1.0);

@@ -7,8 +7,8 @@ public class Calculadora {
 	Integer tamanho;
 	Double peso;
 	
-	public Double calcularSoma(Double n1, Double n2){
-		Double soma = n1 + n2;
+	public int calcularSoma(int n1, int n2){
+		int soma = n1 + n2;
 		return soma;
 	}
 	
@@ -26,4 +26,6 @@ public class Calculadora {
 		Double divisao = n1 / n2;
 		return divisao;
 	}
+
+	
 }
