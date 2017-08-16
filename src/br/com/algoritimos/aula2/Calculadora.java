@@ -24,12 +24,18 @@ public class Calculadora {
 
 	public Double calcularDivisao(Double n1, Double n2) {
 		Double divisao = null;
-		if (n2 > 0) {
-			if (n1 > 0){
+		if (n1 > 0 && n2 > 0) {
 			divisao = n1 / n2;
-			}
-		} 
+		}
 		return divisao;
+	}
+
+	public boolean ehPar(int n) {
+		if (!(n % 2 == 0)) {
+			return false;
+		} else {
+			return true;
+		}
 	}
 
 }
