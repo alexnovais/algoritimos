@@ -9,13 +9,22 @@ public class ProgramaPrincipalAula3 {
 	public static void main(String[] args) {
 		
 		Scanner leitor = new Scanner(System.in);
-		System.out.println("Digite um número: ");
+		//System.out.println("Digite um número: ");
 		
 		Calculadora calc = new Calculadora();
-		boolean r = calc.ehPar(leitor.nextInt());
+		/*boolean r = calc.ehPar(leitor.nextInt());
 		System.out.println(r);
 		
-		leitor.close();
+		leitor.close();*/
+		
+		System.out.println("Digite o primeiro número:");
+		Double a = leitor.nextDouble();
+		
+		System.out.println("Digite o segundo número:");
+		Double b = leitor.nextDouble();
+		
+		Double r = calc.calcularDivisao(a,b);
+		System.out.println("O Resultado da divisão é: "+r);
 	}
 
 }
