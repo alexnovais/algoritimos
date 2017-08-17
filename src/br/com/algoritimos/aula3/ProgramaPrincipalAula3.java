@@ -23,7 +23,10 @@ public class ProgramaPrincipalAula3 {
 		System.out.println("Digite o segundo número:");
 		Double b = leitor.nextDouble();
 		
-		Double r = calc.calcularDivisao(a,b);
+		System.out.println("Operação (1=soma, 2=subtração, 3=divisão e 4=multiplicação)");
+		Integer op = leitor.nextInt();
+		
+		Double r = calc.calcular(a,b, op);
 		System.out.println("O Resultado da divisão é: "+r);
 	}
 

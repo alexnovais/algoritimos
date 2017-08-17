@@ -7,8 +7,8 @@ public class Calculadora {
 	Integer tamanho;
 	Double peso;
 
-	public int calcularSoma(int n1, int n2) {
-		int soma = n1 + n2;
+	public Double calcularSoma(Double n1, Double n2) {
+		Double soma = n1 + n2;
 		return soma;
 	}
 
@@ -36,6 +36,26 @@ public class Calculadora {
 		} else {
 			return true;
 		}
+	}
+
+	public Double calcular(Double n1, Double n2, Integer operacao) {
+		Double calculo = null;
+		if (operacao == 1) {
+			calculo = calcularSoma(n1, n2);
+		} else {
+			if (operacao == 2) {
+				calculo = calcularSubtracao(n1, n2);
+			} else {
+				if (operacao == 3) {
+					calculo = calcularDivisao(n1, n2);
+				} else {
+
+					calculo = calcularMultiplicacao(n1, n2);
+
+				}
+			}
+		}
+		return calculo;
 	}
 
 }

@@ -21,12 +21,12 @@ public class ProgramaPrincipalEntradaDados {
 		Calculadora calc = new Calculadora();
 		
 		System.out.println("Digite n1:");
-		int n1 = leitor.nextInt();
+		Double n1 = leitor.nextDouble();
 		
 		System.out.println("Digite n2");
-		int n2 = leitor.nextInt();
+		Double n2 = leitor.nextDouble();
 
-		int s = calc.calcularSoma(n1, n2);
+		Double s = calc.calcularSoma(n1, n2);
 		
 		System.out.println("A soma é:" + s);
 		//Encerramento do objeto
