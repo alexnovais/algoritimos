@@ -18,6 +18,8 @@ public class ProgramaPrincipalTesteFigGeometrica {
 
 		String triangulo = fg.identificarTriangulo(a, b, c);
 		System.out.println("O triângulo é: " + triangulo);
+		
+		leitor.close();
 
 	}
 

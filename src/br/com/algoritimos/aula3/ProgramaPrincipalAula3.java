@@ -28,6 +28,8 @@ public class ProgramaPrincipalAula3 {
 		
 		Double r = calc.calcular(a,b, op);
 		System.out.println("O Resultado da divisão é: "+r);
+		
+		leitor.close();
 	}
 
 }
