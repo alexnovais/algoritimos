@@ -5,12 +5,12 @@ import java.util.Scanner;
 /**
  * @author Alex Novais
  * 
- *         Faça um programa que leia 2 números inteiros e imprima qual é maior
+ *         Faça um programa que leia 3 números inteiros e imprima qual é maior
  *         entre eles?
  * 
  */
 
-public class ProgramaPrincipalMaior {
+public class ProgramaPrincipalMaior3 {
 
 	public static void main(String[] args) {
 
@@ -21,6 +21,9 @@ public class ProgramaPrincipalMaior {
 
 		System.out.println("Digite n2");
 		int n2 = leitor.nextInt();
+
+		System.out.println("Digite n3");
+		int n3 = leitor.nextInt();
 
 		int maior = 0;
 
