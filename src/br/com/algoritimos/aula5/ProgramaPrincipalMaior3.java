@@ -26,16 +26,27 @@ public class ProgramaPrincipalMaior3 {
 		int n3 = leitor.nextInt();
 
 		int maior = 0;
+		int menor = 0;
 
-		if (n1 > n2) {
-			maior = n1;
-			System.out.println("Maior: " + maior);
-		} else if (n2 > n1) {
+		if (n3 > n2 && n3 > n1) {
+			maior = n3;
+		} else if (n2 > n1 && n2 > n3) {
 			maior = n2;
-			System.out.println("Maior: " + maior);
+
 		} else {
-			System.out.println("São iguais!");
+			maior = n1;
 		}
+
+		if (n3 < n2 && n3 < n1) {
+			menor = n3;
+		} else if (n2 < n1 && n2 < n3) {
+			menor = n2;
+
+		} else {
+			menor = n1;
+		}
+
+		System.out.println("Menor: "+ menor + " Maior: " + maior);
 
 		leitor.close();
 	}
